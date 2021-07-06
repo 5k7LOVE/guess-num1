@@ -8,12 +8,13 @@
 import random
 
 r = random.randint(1, 100)
-
+n = 0
 while True:
+	n += 1
 
 	num = input('請輸入關鍵密碼:')
 	num = int(num)
-
+	print('你猜了，', n, '次')
 	if r > num:
 		print('過小了')
 	elif r < num:
