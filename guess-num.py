@@ -7,7 +7,13 @@
 
 import random
 
-r = random.randint(1, 100)
+fristNum = input('請輸入起始數字：')
+fristNum = int(fristNum)
+
+nextNum = input('請輸入最終數字')
+nextNum = int(nextNum)
+
+r = random.randint(fristNum, nextNum)
 n = 0
 while True:
 	n += 1
@@ -22,3 +28,5 @@ while True:
 	elif r == num:
 		print('中出')
 		break
+
+
